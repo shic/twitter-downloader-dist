@@ -70,12 +70,25 @@
 								<span class="d-block text-color-dark text-5 opacity-7">Downloader</span>
 							</div>
 							
-							<button id="my-button"></button>
 
 						</div>
 					</div>
 				</section>
-
+        <div class="wrapper">
+          <div class="loader-box">
+            <div class="loader">
+              
+            </div>
+            <div class="loader-text">
+              Loading...
+            </div>
+          </div>
+          
+          <div class="description-box">
+            Please wait for the download to complete. 							
+          </div>
+          <button id="my-button"></button>
+        </div>
 		
 			</div> 
 
@@ -170,7 +183,7 @@
 		console.log(videoUrl);
 		// Example usage:
 		//const videoUrl = 'https://video.twimg.com/amplify_video/1740456910929756160/vid/avc1/960x544/Top7RAGzEiTSOOKx.mp4?tag=14';
-		const savePath = 'savextwitter.mp4';
+		const savePath = 'savextwitter.com.mp4';
 		downloadTwitterVideo(videoUrl, savePath);
 		
 		</script>
