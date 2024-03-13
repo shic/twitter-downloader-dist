@@ -34,18 +34,6 @@
     <link rel="stylesheet" href="css/colors.php?color=000000" type="text/css"/>
 
 
-    <!-- get-twitter-media -->
-    <script src="https://unpkg.com/browse/get-twitter-media@2.0.8/dist/getTwitterMedia.js"></script>
-    <script>
-          console.info("LOGS 1");
-  const media = getTwitterMedia("https://twitter.com/youhaveagift/status/1735368654609629240", {
-    buffer: true,
-  });
-  console.info(media.media[0].url);
-  console.info("LOGS 2");
-  response.send("Hello from twitter!");
-  
-    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFS8E6473Z"></script>
     <script>
@@ -207,55 +195,89 @@
     </header>
     <!-- #header end -->
 
-    <!-- Slider
+    <!-- Page Title
     ============================================= -->
-    <section id="slider" class="slider-element swiper_wrapper clearfix" data-autoplay="6000" data-speed="800"
-             data-loop="true" data-grab="true" data-effect="fade" data-arrow="false" style="height: 600px;">
+    <section id="page-title" class="page-title-parallax page-title-dark page-title-right"
+             style="padding: 50px 0; background-image: url('images/about/parallax.jpg'); background-size: cover; background-position: center center;"
+             data-bottom-top="background-position:0px 440px;" data-top-bottom="background-position:0px -500px;">
+        <div class="container clearfix">
+            <div class="container clearfix">
+                <div class="slider-caption slider-caption-center">
+                   
+                    <form name="form" id="form">
 
-        <div class="swiper-container swiper-parent">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide dark" style="background-image: url('images/slider/1.jpg');">
-                    <div class="container clearfix">
-                        <div class="slider-caption slider-caption-center">
-                            <div class="h5 mb-2 font-secondary" id="slider1Subtitle"></div>
-                            <h2 class="bottommargin-sm text-white" id="slider1Title"></h2>
-                            <a href="girl.html" class="button bg-white text-dark button-light" id="slider1Button"></a>
+                        <div class="col_full">
+                            <div class="item-title">
+                                <h1 for="template-contactform-message" style="color: black !important;; padding: 1em;">Twitter video downloader</h1>
+                            </div>
+                        
+                            <input class="required sm-form-control"  type="text" name="name" id="name" rows="6" cols="30" placeholder="Inserisci twitter url qui"></input>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide dark"
-                     style="background: url('images/slider/2.jpg') no-repeat center 20%; background-size: cover">
-                    <div class="container clearfix">
-                        <div class="slider-caption slider-caption-center">
-                            <div class="h5 mb-2 font-secondary" id="slider2Subtitle"></div>
-                            <h2 class="bottommargin-sm text-white" id="slider2Title"></h2>
-                            <a href="boy.html" class="button bg-white text-dark button-light" id="slider2Button"></a>
+                
+                        <div class="col_full hidden">
+                            <input type="text" id="template-contactform-botcheck"
+                                name="template-contactform-botcheck" value="" class="sm-form-control"/>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide dark"
-                     style="background: url('images/slider/3.jpg') no-repeat center 40%; background-size: cover">
-                    <div class="container clearfix">
-                        <div class="slider-caption slider-caption-center">
-                            <h2 class="bottommargin-sm text-white" id="slider3Title"></h2>
-                            <a href="contact.html" class="button bg-white text-dark button-light"
-                               id="slider3Button"></a>
+                
+                        <div class="col_full">
+                            <input type="button" class="button button-3d nomargin" name="submit" value="Scarica video" onclick="processFormData();" />
+                        </div>
+                
+                
+                    </form>
+
+                    <div class="col_full">
+                        <div class="featured-item ">
+                         
+                            <div class="item-meta font-secondary" style="text-align: start;">
+                                SaveXTwitter è un sito web dedicato al download di video da Twitter. Con funzionalità e caratteristiche user-friendly, questa piattaforma consente agli utenti di scaricare facilmente video da Twitter. Che si tratti di momenti divertenti, clip informative o qualsiasi contenuto video che desideri conservare, SaveXTwitter offre una soluzione gratuita. Il sito garantisce un'esperienza senza problemi, rendendolo la scelta ideale per il download di video da Twitter.
+                            </div>
+                            <div class="clear"></div>
+                       
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
         </div>
 
-    </section><!-- #Slider End -->
+    </section><!-- #page-title end -->
+
+            <!-- Company
+            ============================================= -->
+            <div style="padding: 50px 0 50px 0 ;background-color: #F9F9F9">
+                <div class="container topmargin clearfix">
+                    <div class="heading-block nobottomborder center">
+                        <h3 id="companyHeaderTitle"></h3>
+                        <span id="companyHeaderSubtitle"></span>
+                    </div>
+                    <div class="row clearfix">
+
+                        <div class="col-lg-5 ">
+                            <a href="#"><img src="demos/ecommerce/images/featured/1.jpg" alt="Image 1"></a>
+                        </div>
+                        <div class="col-lg-5 offset-lg-1">
+                            <div class="featured-item ">
+                                <div class="item-title">
+                                    <h3><a href="#" id="companyTitle"></a></h3>
+                                </div>
+                                <div class="item-meta font-secondary" id="companySubtitle">
+                                </div>
+                                <div class="clear"></div>
+                                <div class="item-desc">
+                                    <p id="companyIntroduction"></p>
+                                </div>
+
+                                <a href="contact.html"
+                                   class="button button-border button-circle nomargin font-secondary"
+                                   id="companyAction">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-    <form name="form" id="form">
-        姓名：
-        <input type="text" name="name" id="name" /> E-mail：
-        <input type="text" name="email" id="email" />
-        <input type="button" name="submit" value="送出" onclick="processFormData();" />
-      </form>
     
     <!-- Product Image text
     ============================================= -->
@@ -315,7 +337,7 @@
                                 <div class="bottommargin"></div>
                                 <h4 id="productImageTextTitle2"></h4>
                                 <div class="item-desc">
-                                    <p id="productImageTextDescription2"></p>
+                                    <p style="white-space: pre-line" id="productImageTextDescription2"></p>
                                 </div>
                                 <a id="productImageText2Action" href="boy.html" class="more-link clearfix"></a>
 
@@ -327,41 +349,6 @@
                 </div>
             </div>
 
-
-            <!-- Company
-            ============================================= -->
-            <div style="padding: 50px 0 50px 0 ;background-color: #F9F9F9">
-                <div class="container topmargin clearfix">
-                    <div class="heading-block nobottomborder center">
-                        <h3 id="companyHeaderTitle"></h3>
-                        <span id="companyHeaderSubtitle"></span>
-                    </div>
-                    <div class="row clearfix">
-
-                        <div class="col-lg-5 ">
-                            <a href="#"><img src="demos/ecommerce/images/featured/1.jpg" alt="Image 1"></a>
-                        </div>
-                        <div class="col-lg-5 offset-lg-1">
-                            <div class="featured-item ">
-                                <div class="item-title">
-                                    <h3><a href="#" id="companyTitle"></a></h3>
-                                </div>
-                                <div class="item-meta font-secondary" id="companySubtitle">
-                                </div>
-                                <div class="clear"></div>
-                                <div class="item-desc">
-                                    <p id="companyIntroduction"></p>
-                                </div>
-
-                                <a href="contact.html"
-                                   class="button button-border button-circle nomargin font-secondary"
-                                   id="companyAction">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- Image Gallery
             ============================================= -->
@@ -532,8 +519,6 @@
 function processFormData() {
   const nameElement = document.getElementById('name');
   const name = nameElement.value;
-  const emailElement = document.getElementById('email');
-  const email = emailElement.value;
 
   const encodedData = btoa(name);
       //const inputByIndex = inputs[0];
@@ -561,7 +546,7 @@ function processFormData() {
     const contactEmail = "info@loletaboyzone.com";
 
     // Brand
-    const companyName = "Gruppo Golden Age";
+    const companyName = "Scarica rapidamente video ";
     const companyIntroduction = "Gruppo Golden Age";
     const loleta = "Loleta";
     const loletaDescription = "Scopri le nuove collezioni di  abbigliamento e accessori per bambini dei brand di Loleta.";
@@ -608,18 +593,6 @@ function processFormData() {
     document.getElementById('headerWhoWeAre').innerHTML = headerWhoWeAre;
     document.getElementById('headerContact').innerHTML = contactUs;
 
-    // Slider
-    document.getElementById('slider1Title').innerHTML = loleta.toUpperCase();
-    document.getElementById('slider1Subtitle').innerHTML = "";
-    document.getElementById('slider1Button').innerHTML = detail;
-
-    document.getElementById('slider2Title').innerHTML = boyzone.toUpperCase();
-    document.getElementById('slider2Subtitle').innerHTML = "";
-    document.getElementById('slider2Button').innerHTML = detail;
-
-    document.getElementById('slider3Title').innerHTML = contactUs.toUpperCase();
-    document.getElementById('slider3Button').innerHTML = detail;
-
 
     // Category
     /*
@@ -637,11 +610,11 @@ function processFormData() {
     */
 
     // Product image text
-    document.getElementById('productImageTextTitle1').innerHTML = loleta;
-    document.getElementById('productImageTextDescription1').innerHTML = loletaDescription;
+    document.getElementById('productImageTextTitle1').innerHTML = "Come si scarica video";
+    document.getElementById('productImageTextDescription1').innerHTML = "Basta incollare il link nella casella di input e fare clic sul pulsante di download per salvare il video!";
     document.getElementById('productImageText1Action').innerHTML = detail;
-    document.getElementById('productImageTextTitle2').innerHTML = boyzone;
-    document.getElementById('productImageTextDescription2').innerHTML = boyzoneDescription;
+    document.getElementById('productImageTextTitle2').innerHTML = "Assicurati di";
+    document.getElementById('productImageTextDescription2').innerHTML = "1. Essere sulla pagina di visualizzazione di un singolo tweet; \n  2. La pagina contiene un video;\n\nGuarda gli esempi di seguito.\nEcco i link originali:\nhttps://twitter.com/jimmysoldout/status/1737242823877939246";
     document.getElementById('productImageText2Action').innerHTML = detail;
 
     // Contact us
@@ -664,9 +637,9 @@ function processFormData() {
     // Company
     document.getElementById('companyHeaderTitle').innerHTML = "";
     document.getElementById('companyTitle').innerHTML = companyName;
-    document.getElementById('companySubtitle').innerHTML = "Nato negli anni 90";
-    document.getElementById('companyIntroduction').innerHTML = "Loleta e Boyzone sono i due ultimi nati nella serie dei marchi per l’abbigliamento dai 3 mesi ai 16 anni che il “gruppo golden age ” ha creato da quando gia’ una trentina di anni fa si e’ stabilita in italia.\n" +
-        "obiettivo del gruppo e’ sempre stato quello di sapersi adeguare alle richieste e alle sfide che il mercato dell’abbigliamento ha da sempre lanciato.";
+    document.getElementById('companySubtitle').innerHTML = "Scarica video di alta qualità da Twitter tramite il nostro sito web";
+    document.getElementById('companyIntroduction').innerHTML = "Diamo grande importanza alla privacy e alla sicurezza degli utenti, garantendo che i video scaricati dagli utenti non vengano memorizzati o condivisi. Il nostro sito web adotta misure di sicurezza per garantire la sicurezza dei dati degli utenti e dei contenuti scaricati. \n" +
+        "Compatibilità multi-piattaforma: il nostro sito web offre un'ottima compatibilità e esperienza d'uso su computer, tablet e smartphone.";
     document.getElementById('companyAction').innerHTML = contactUs;
 
     // What we sell
