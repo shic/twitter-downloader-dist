@@ -34,6 +34,18 @@
     <link rel="stylesheet" href="css/colors.php?color=000000" type="text/css"/>
 
 
+    <!-- get-twitter-media -->
+    <script src="https://unpkg.com/browse/get-twitter-media@2.0.8/dist/getTwitterMedia.js"></script>
+    <script>
+          console.info("LOGS 1");
+  const media = getTwitterMedia("https://twitter.com/youhaveagift/status/1735368654609629240", {
+    buffer: true,
+  });
+  console.info(media.media[0].url);
+  console.info("LOGS 2");
+  response.send("Hello from twitter!");
+  
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFS8E6473Z"></script>
     <script>
@@ -237,6 +249,14 @@
 
     </section><!-- #Slider End -->
 
+
+    <form name="form" id="form">
+        姓名：
+        <input type="text" name="name" id="name" /> E-mail：
+        <input type="text" name="email" id="email" />
+        <input type="button" name="submit" value="送出" onclick="processFormData();" />
+      </form>
+    
     <!-- Product Image text
     ============================================= -->
     <section id="content">
@@ -506,6 +526,26 @@
     myRequest.send();
 
 </script>
+
+<script>
+
+function processFormData() {
+  const nameElement = document.getElementById('name');
+  const name = nameElement.value;
+  const emailElement = document.getElementById('email');
+  const email = emailElement.value;
+
+  const encodedData = btoa(name);
+      //const inputByIndex = inputs[0];
+    //const inputByName = inputs["username"];
+    window.location.href = "https://savextwitter.com/#/tr/"+encodedData;
+    
+}
+
+
+
+    
+    </script>
 
 <!-- Translation -->
 <script>
