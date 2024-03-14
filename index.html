@@ -156,18 +156,20 @@
     <section id="page-title" class="page-title-parallax page-title-dark page-title-right"
              style="padding: 50px 0; background-image: url('images/about/parallax1.jpg'); background-size: cover; background-position: center center;"
              data-bottom-top="background-position:0px 440px;" data-top-bottom="background-position:0px -500px;">
-        <div class="container clearfix">
-            <div class="container clearfix">
+             <div class="container clearfix">
                 <div class="slider-caption slider-caption-center">
                    
                     <form name="form" id="form">
 
                         <div class="col_full">
                             <div class="item-title">
-                                <h1 for="template-contactform-message" style="color: black !important;; padding: 1em;">Twitter video downloader</h1>
+                                <h1 for="template-contactform-message" style="color: black !important;">Twitter</h1>
+                            </div>
+                            <div class="item-title">
+                                <h3 for="template-contactform-message" style="color: black !important;; padding: 1em;"> video downloader</h3>
                             </div>
                         
-                            <input class="required sm-form-control"  type="text" name="name" id="name" rows="6" cols="30" placeholder="Inserisci twitter url qui"></input>
+                            <textarea class="required sm-form-control"  type="text" name="name" id="name" rows="6" cols="30" placeholder="Inserisci twitter url qui"></textarea>
                         </div>
                 
                         <div class="col_full hidden">
@@ -194,7 +196,6 @@
                     </div>
                 </div>
             </div>
-        </div>
 
     </section><!-- #page-title end -->
 
@@ -519,7 +520,7 @@ function processFormData() {
   const encodedData = btoa(name);
       //const inputByIndex = inputs[0];
     //const inputByName = inputs["username"];
-    window.location.href = "https://savextwitter.com/#/tr/"+encodedData;
+    window.location.href = "https://app.savextwitter.com/#/tr/"+encodedData;
     
 }
 
