@@ -9,59 +9,35 @@
 
 <url>
   <loc>https://savextwitter.com/</loc>
-  <lastmod>2024-03-14T13:10:29+00:00</lastmod>
+  <lastmod>2024-03-27T18:23:17+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://savextwitter.com/index.html</loc>
-  <lastmod>2024-03-14T13:10:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://savextwitter.com/girl.html</loc>
-  <lastmod>2024-03-14T13:10:30+00:00</lastmod>
+  <lastmod>2024-03-27T18:23:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://savextwitter.com/boy.html</loc>
-  <lastmod>2024-03-14T13:10:29+00:00</lastmod>
+  <lastmod>2024-03-27T18:23:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://savextwitter.com/about.html</loc>
-  <lastmod>2024-03-14T13:10:29+00:00</lastmod>
+  <lastmod>2024-03-27T18:23:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://savextwitter.com/contact.html</loc>
-  <lastmod>2024-03-14T13:10:29+00:00</lastmod>
+  <lastmod>2024-03-27T18:23:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://savextwitter.com/en/index.html</loc>
-  <lastmod>2024-03-14T13:10:29+00:00</lastmod>
+  <loc>https://savextwitter.com/contact.html</loc>
+  <lastmod>2024-03-27T18:23:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://savextwitter.com/en/girl.html</loc>
-  <lastmod>2024-03-14T13:10:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://savextwitter.com/en/boy.html</loc>
-  <lastmod>2024-03-14T13:10:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://savextwitter.com/en/about.html</loc>
-  <lastmod>2024-03-14T13:10:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://savextwitter.com/en/contact.html</loc>
-  <lastmod>2024-03-14T13:10:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+
 
 
 </urlset>
