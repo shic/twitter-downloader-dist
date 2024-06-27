@@ -598,7 +598,8 @@ function processFormData() {
   const encodedData = btoa(name);
       //const inputByIndex = inputs[0];
     //const inputByName = inputs["username"];
-    window.location.href = "https://app.savextwitter.com/#/tr/"+encodedData;
+    const urlSafe = encodedData.replaceAll('/', '%2f');
+            window.location.href = "https://app.savextwitter.com/#/tr/" + urlSafe;
     
 }
 
